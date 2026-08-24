@@ -2,7 +2,7 @@
 import json
 from typing import List, Dict, TYPE_CHECKING
 from pydantic import ValidationError
-from core.state import TripState
+from .state import TripState
 if TYPE_CHECKING:
     from llm import LLMClient
 
