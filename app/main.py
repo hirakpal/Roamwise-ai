@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Ensure project root is in the path
+sys.path.append(str(Path(__file__).parent.parent))
+
 import streamlit as st
 from dotenv import load_dotenv
 from core.llm import LLMClient
