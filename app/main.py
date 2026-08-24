@@ -8,6 +8,8 @@ import streamlit as st
 from dotenv import load_dotenv
 from core.llm import LLMClient
 from core.context_manager import ContextManager
+import core.state
+print("TripState successfully imported:", core.state.TripState)
 from app.ui import render_sidebar, render_chat_history, handle_user_input
 
 load_dotenv()
