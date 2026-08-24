@@ -2,9 +2,15 @@
 import json
 from typing import List, Dict, TYPE_CHECKING
 from pydantic import ValidationError
-from .state import TripState
+
+# Force import of TripState
+try:
+    from .state import TripState
+except ImportError:
+    from core.state import TripState
+
 if TYPE_CHECKING:
-    from llm import LLMClient
+    from .llm import LLMClient
 
 # ---------------------------------------------------------------
 # Strengthened extraction prompt
