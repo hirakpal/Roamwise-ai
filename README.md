@@ -54,6 +54,7 @@ The Worldly Companion is an intelligent conversational travel advisor that prior
 
 ```
 ## Project Structure
+```
 worldly-companion/
 ├── app/
 │   └── main.py                 # Streamlit application
@@ -69,3 +70,4 @@ worldly-companion/
 ├── requirements.txt
 ├── .env.example
 └── README.md
+```
